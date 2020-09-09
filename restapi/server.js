@@ -22,7 +22,13 @@ app.get(ROUTE_CONSTANTS.GET_REGISTER, function(req, res){
 
 app.post(ROUTE_CONSTANTS.POST_REGISTER, function(req, res){
     console.log(req.body);
-    res.send("Registered Successfully!!!");
+    res.send("Registered Successfully!!!");    
+    
+});
+
+app.post(ROUTE_CONSTANTS.POST_LOGIN, function(req, res){
+  console.log(req.body);
+  res.send("Login Successful");
 });
 
 app.get(ROUTE_CONSTANTS.GET_PRODUCTS, function(req, res){
